@@ -1,0 +1,144 @@
+{
+  "id": 4,
+  "name": "Заявление о выдаче исполнительного листа",
+  "s3Url": "Заявление о выдаче исполнительного листа.odt",
+  "fields": [
+    {
+      "formName": "Court",
+      "viewName": "Суд",
+      "required": "true",
+      "type": "combobox",
+      "dataSet": "case",
+      "value": "courts",
+      "colspan": "2"
+    },
+    {
+      "formName": "MethodSend",
+      "viewName": "Способ выдачи",
+      "required": "true",
+      "type": "combobox",
+      "dataSet": "",
+      "value": "[{\"Id\" : 1, \"Value\" : \"Почта России\"},{\"Id\" : 2, \"Value\" : \"Нарочно\"}]",
+      "colspan": "1"
+    },
+    {
+      "formName": "DateDocument",
+      "viewName": "Дата судебного акта",
+      "required": "true",
+      "type": "date",
+      "dataSet": "",
+      "value": "",
+      "colspan": "1"
+    },
+    {
+      "formName": "TypeDocument",
+      "viewName": "Тип судебного акта",
+      "required": "true",
+      "type": "combobox",
+      "dataSet": "",
+      "value": "[{\"Id\" : 1, \"Value\" : \"Определение\"},{\"Id\" : 2, \"Value\" : \"Решение\"}, {\"Id\" : 3, \"Value\" : \"Постановление\"}]",
+      "colspan": "2"
+    },
+    {
+      "formName": "SideModel_name",
+      "viewName": "Заявитель",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "Declarer",
+      "colspan": "2"
+    },
+    {
+      "formName": "SideModel_inn",
+      "viewName": "ИНН заявителя",
+      "validator": "inn",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "IssuedByINN",
+      "colspan": "2"
+    },
+    {
+      "formName": "SideModel_ogrn",
+      "viewName": "ОГРН (ОГРНИП) заявителя",
+      "validator": "ogrn",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "IssuedByOGRN",
+      "colspan": "2"
+    },
+    {
+      "formName": "SideModel_addresses",
+      "viewName": "Адрес заявителя",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "IssuedByAddress",
+      "colspan": "6"
+    },
+    {
+      "formName": "RepresentativeLastName",
+      "viewName": "Фамилия представителя",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "RepresentativeLastName",
+      "colspan": "2"
+    },
+    {
+      "formName": "RepresentativeFirstName",
+      "viewName": "Имя представителя",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "RepresentativeFirstName",
+      "colspan": "2"
+    },
+    {
+      "formName": "RepresentativeMiddleName",
+      "viewName": "Отчество представителя",
+      "required": "true",
+      "type": "text",
+      "dataSet": "warrant",
+      "value": "RepresentativeMiddleName",
+      "colspan": "2"
+    },
+    {
+      "formName": "Phone",
+      "viewName": "Телефон представителя",
+      "mask": "phone",
+      "required": "true",
+      "type": "text",
+      "dataSet": "esiaInfo",
+      "value": "Phone",
+      "colspan": "2"
+    },
+    {
+      "formName": "Email",
+      "viewName": "Email представителя",
+      "validator": "email",
+      "required": "true",
+      "type": "text",
+      "dataSet": "esiaInfo",
+      "value": "ViewEmail",
+      "colspan": "4"
+    },
+    {
+      "formName": "RecourseReadyModel_recourseTypeId",
+      "viewName": "",
+      "required": "true",
+      "type": "text",
+      "dataSet": "",
+      "value": "00ebb747-c067-4510-8ca6-cf613939a8ae"
+    },
+    {
+      "formName": "RecourseReadyModel_subtypeId",
+      "viewName": "",
+      "required": "true",
+      "type": "text",
+      "dataSet": "",
+      "value": "9557651b-3bdd-4247-8e46-d6e3e00dfb15"
+    }
+  ]
+}
